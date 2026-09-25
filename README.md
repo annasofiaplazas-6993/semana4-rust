@@ -59,3 +59,23 @@ test tests::prueba_calcular_dano_critico ... ok
 
 test result: ok. 2 passed; 0 failed
 ```
+## Paso 3: prueba unitaria de calcular_dano_promedio
+
+Se creó la función `calcular_dano_promedio(dano_base: i32, por_oleada: i32) -> f64`.
+
+La función convierte los valores a `f64` y calcula el daño promedio mediante división.
+
+Se agregó una nueva prueba unitaria para comprobar que:
+
+`calcular_dano_promedio(100, 4) = 25.0`
+
+Resultado de `cargo test`:
+
+```text
+running 3 tests
+test tests::prueba_calcular_dano_critico ... ok
+test tests::prueba_calcular_dano_promedio ... ok
+test tests::prueba_calcular_oleadas ... ok
+
+test result: ok. 3 passed; 0 failed
+```
