@@ -79,3 +79,19 @@ test tests::prueba_calcular_oleadas ... ok
 
 test result: ok. 3 passed; 0 failed
 ```
+## Paso 4: verificación final — 3 pruebas pasando
+
+Se realizó la verificación final del proyecto mediante `cargo run` y `cargo test`.
+
+Las tres pruebas unitarias pasaron correctamente:
+
+```text
+running 3 tests
+test tests::prueba_calcular_dano_promedio ... ok
+test tests::prueba_calcular_dano_critico ... ok
+test tests::prueba_calcular_oleadas ... ok
+
+test result: ok. 3 passed; 0 failed
+```
+
+El proyecto quedó funcionando correctamente con las tres pruebas unitarias aprobadas.
