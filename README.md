@@ -40,3 +40,22 @@ También se ejecutó `cargo run` y se obtuvo:
 ```text
 Oleadas: 3
 ```
+## Paso 2: prueba unitaria de calcular_dano_critico
+
+Se creó la función `calcular_dano_critico(dano_base: i32, multiplicador: f64) -> f64`.
+
+La función convierte `dano_base` de `i32` a `f64` y lo multiplica por el multiplicador.
+
+Se agregó una nueva prueba unitaria para comprobar que:
+
+`calcular_dano_critico(100, 1.5) = 150.0`
+
+Resultado de `cargo test`:
+
+```text
+running 2 tests
+test tests::prueba_calcular_oleadas ... ok
+test tests::prueba_calcular_dano_critico ... ok
+
+test result: ok. 2 passed; 0 failed
+```
